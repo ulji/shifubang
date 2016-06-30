@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rrly_first"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_title_height"
+        android:background="@color/theme_color1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="我的订单"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_secondary" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/first_below_btn_height"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_first_allOrders"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/first_all_orders_btn"
+            android:textColor="@color/theme_color1"
+            android:textSize="@dimen/text_size_secondary" />
+      
+        <Button
+            android:id="@+id/btn_first_alreadyOrders"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/first_already_orders_btn"
+            android:textColor="@color/theme_color1"
+            android:textSize="@dimen/text_size_secondary" />
+
+        <Button
+            android:id="@+id/btn_first_completeOrders"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/first_complete_orders_btn"
+              android:textColor="@color/theme_color1"
+            android:textSize="@dimen/text_size_secondary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="28dp" >
+
+        <ImageView
+            android:id="@+id/cursor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/theme_color1"
+            android:scaleType="matrix"
+             />
+    </LinearLayout>
+        
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_first_orders"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </android.support.v4.view.ViewPager>
+    </FrameLayout>
+
+</LinearLayout>

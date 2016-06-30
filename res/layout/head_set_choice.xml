@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background = "@drawable/userinfo_dialog_bg" >
+
+
+    
+		
+    	<LinearLayout
+    	    android:id = "@+id/take_pictures_layout"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="0dp"
+        	android:layout_weight="1"
+        	android:orientation="vertical"
+        	android:gravity="center">
+    	    <TextView
+		        android:id="@+id/take_pictures"
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:gravity="center_vertical"            
+		        android:text="@string/from_camera"
+		        android:textColor="#FF2e4c64"
+		        android:textSize="14sp" 		 
+		        android:paddingBottom="15dp"
+	        	android:paddingTop="15dp"/>
+<!--     	    <TextView -->
+<!-- 		        android:id="@+id/take_pictures" -->
+<!-- 		        android:layout_width="wrap_content" -->
+<!-- 		        android:layout_height="fill_parent" -->
+<!-- 		        android:gravity="center_vertical"             -->
+<!-- 		        android:text="@string/from_camera" -->
+<!-- 		        android:textColor="#FF2e4c64" -->
+<!-- 		        android:textSize="14sp"  -->
+<!-- 		        android:drawableLeft="@drawable/ic_camera1" -->
+<!-- 		        android:drawablePadding="11dp" -->
+<!-- 		        android:paddingBottom="15dp" -->
+<!-- 	        	android:paddingTop="15dp"/> -->
+    	</LinearLayout>
+        
+<!--         <View -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="2dp" -->
+<!--             android:background="#e1e1e1" /> -->
+
+		<LinearLayout
+    	    android:id = "@+id/select_photo_layout"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="0dp"
+        	android:layout_weight="1"
+        	android:orientation="vertical"
+        	android:gravity="center">
+    	    <TextView
+		        android:id="@+id/select_photo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="fill_parent"
+		        android:text="@string/from_album"
+		        android:textColor="#FF2e4c64"
+		        android:textSize="14sp" 		   
+		        android:paddingBottom="15dp"
+	        	android:paddingTop="15dp"/>
+
+    	</LinearLayout>
+
+        
+        <Button
+            android:id="@+id/select_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+        	android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="取消 "
+            android:textColor="#FF2e4c64"
+            android:textSize="14sp"
+            android:paddingBottom="15dp"
+        	android:paddingTop="15dp" />
+</LinearLayout>

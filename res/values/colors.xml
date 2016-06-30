@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_color">#ff2C3E54</color>
+    <color name="theme_color1">#009A9A</color>  
+    <color name="theme_color2">#EEEEEE</color>
+    <color name="flax_ash">#E6E6E6</color>
+    <color name="feedback_btn_color">#26AFB5</color>
+     <color name="light_hint">#a4a4a4</color>
+    <color name="Light_blue">#3199F2</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#333</color>
+    <color name="transparent">#00ffffff</color>  
+    <color name="gray">#dddddd</color>
+    <color name="_gray">#dddddd</color>
+    <color name="personal_view">#E6E6E6</color>
+    <color name="gray_90">#95dddddd</color>
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+    <color name="help_view">#ffdddddd</color>
+</resources>

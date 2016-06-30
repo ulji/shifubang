@@ -1,0 +1,398 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SaveReserveOrderActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/theme_color1" >
+
+        <ImageButton
+            android:id="@+id/Imagebtn_returnbtn"
+            android:layout_width="@dimen/img_help_title_height"
+            android:layout_height="@dimen/img_help_title_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_help_marginleft"
+            android:background="@drawable/return_img" />
+
+        <TextView
+            android:id="@+id/tv_settings_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="提货界面"
+            android:textColor="@color/white"
+            android:textSize="@dimen/help_titleSize" />
+
+        <Button
+            android:id="@+id/btn_save_ok"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/feedback_shape_btn"
+            android:scaleType="centerInside"
+            android:src="@drawable/eg"
+            android:text="提货问题"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_m_min" />
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/lv_save_details_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:paddingStart="15dp"
+                android:text="服务类型" />
+
+            <TextView
+                android:id="@+id/details_describe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:paddingEnd="20dp"
+                android:text="无" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/personal_view" />
+        
+        
+        <LinearLayout
+            android:id="@+id/llyt_details_column4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:paddingStart="15dp"
+                android:text="送货地址" />
+
+            <TextView
+                android:id="@+id/save_details_column4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:paddingEnd="20dp"
+                android:text="无" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/personal_view" />
+        
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:paddingStart="15dp"
+            android:text="取货地址" />
+
+        <TextView
+            android:id="@+id/save_details_logisiticsAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:paddingEnd="20dp"
+            android:text="无" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/personal_view" />
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:paddingStart="15dp"
+            android:text="取货电话" />
+
+        <TextView
+            android:id="@+id/save_details_logisiticsPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:paddingEnd="20dp"
+            android:text="无" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/personal_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:paddingStart="15dp"
+                android:text="时间" />
+
+            <TextView
+                android:id="@+id/details_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:paddingEnd="20dp"
+                android:text="无" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/personal_view" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:paddingStart="15dp"
+                android:text="价格" />
+
+            <TextView
+                android:id="@+id/tv_save_orderPrice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:paddingEnd="20dp"
+                android:text="无" />
+        </LinearLayout>
+        
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/personal_view" />
+
+        <LinearLayout
+            android:id="@+id/llyt_details_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:paddingStart="15dp"
+                android:text="买家姓名" />
+
+            <TextView
+                android:id="@+id/details_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:paddingEnd="20dp"
+                android:text="无" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/personal_view" />
+
+        <LinearLayout
+            android:id="@+id/llyt_details_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:paddingStart="15dp"
+                android:text="买家电话" />
+
+            <TextView
+                android:id="@+id/details_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:paddingEnd="20dp"
+                android:text="无" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/personal_view" />
+
+        <LinearLayout
+            android:id="@+id/llyt_details_elevator"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:paddingStart="15dp"
+                android:text="电梯" />
+
+            <TextView
+                android:id="@+id/details_elevator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center"
+                android:paddingEnd="20dp"
+                android:text="无" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/personal_view" />
+
+
+        <LinearLayout
+            android:id="@+id/llyt_new_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:paddingStart="15dp"
+                android:text="预约时间" />
+
+            <TextView
+                android:id="@+id/tv_details_now_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:gravity="right|center"
+                android:paddingEnd="20dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_min" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/personal_view"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/uploadPictureLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:background="@drawable/main_background"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="vertical"
+                android:scrollbars="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="4dp" >
+
+                    <com.photo.choosephotos.controller.GridViewWithoutScroll
+                        android:id="@+id/allPic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:horizontalSpacing="5dp"
+                        android:numColumns="4"
+                        android:padding="10dp"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="5dp" >
+                    </com.photo.choosephotos.controller.GridViewWithoutScroll>
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_status"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/theme_color1"
+            android:text="开始工作"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rrly_first"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_title_height"
+        android:background="@color/theme_color1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="个人中心"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_secondary" />
+    </RelativeLayout>
+
+     <ScrollView        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+    <RelativeLayout
+        android:id="@+id/llyt_personal_head"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/head_bj" >
+
+        <com.xskj.shifubang.view.CircleImageView
+            android:id="@+id/img_personal_head"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logo"
+            app:border_color="@color/white"
+            app:border_width="2dp" />
+
+        <TextView
+            android:id="@+id/tv_personal_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_personal_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:paddingStart="@dimen/text_size_m_min"
+            android:text="昵称"
+            android:drawableRight="@drawable/personal_btn_eg"
+            android:drawablePadding="3dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_min" />
+
+        <LinearLayout
+            android:id="@+id/llyt_personal_integral"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:background="#25000000"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_personal_total_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0个"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_max" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="订单总数"
+                    android:textColor="@color/gray_90"
+                    android:textSize="@dimen/text_size_min" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#40ffffff" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_personal_order_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0元"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_max" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="订单金额"
+                    android:textColor="@color/gray_90"
+                    android:textSize="@dimen/text_size_min" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+   
+    <!-- 按钮部分 -->
+   
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+             >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/llyt_personal_authentication"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:background="@drawable/personal_btn_stroke"
+                        android:drawableTop="@drawable/personal_btn_eg"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="认证"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_min" />
+                </LinearLayout>
+                
+                 <LinearLayout
+                    android:id="@+id/llyt_personal_update"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:background="@drawable/personal_btn_stroke"
+                        android:drawableTop="@drawable/personal_btn_eg"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="更新"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_min" />
+                </LinearLayout>
+
+                <!-- <LinearLayout
+                    android:id="@+id/llyt_personal_position"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:background="@drawable/personal_btn_stroke"
+                        android:drawableTop="@drawable/personal_btn_eg"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="位置"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_min" />
+                </LinearLayout> -->
+
+               <!--  <LinearLayout
+                    android:id="@+id/llyt_personal_explain"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:background="@drawable/personal_btn_stroke"
+                        android:drawableTop="@drawable/personal_btn_eg"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="说明"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_min" />
+                </LinearLayout> -->
+                
+                <LinearLayout
+                    android:id="@+id/llyt_personal_cancellation"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:background="@drawable/personal_btn_stroke"
+                        android:drawableTop="@drawable/personal_btn_eg"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="注销"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_min" />
+                </LinearLayout>
+            </LinearLayout>
+<!-- 
+            <LinearLayout
+                
+                    android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/llyt_personal_feedback"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"               
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:background="@drawable/personal_btn_stroke"
+                        android:drawableTop="@drawable/personal_btn_eg"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="反馈"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_min" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llyt_personal_update"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:background="@drawable/personal_btn_stroke"
+                        android:drawableTop="@drawable/personal_btn_eg"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="更新"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_min" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llyt_personal_data"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:background="@drawable/personal_btn_stroke"
+                        android:drawableTop="@drawable/personal_btn_eg"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="资料"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_min" />
+                </LinearLayout>
+            </LinearLayout>
+ -->
+          <!--   <LinearLayout
+                 android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/llyt_personal_aty"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"                   
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:background="@drawable/personal_btn_stroke"
+                        android:drawableTop="@drawable/personal_btn_eg"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="活动"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_min" />
+                </LinearLayout>
+
+                <LinearLayout                    
+                    android:id="@+id/llyt_personal_notice"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:background="@drawable/personal_btn_stroke"
+                        android:drawableTop="@drawable/personal_btn_eg"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="公告"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_min" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llyt_personal_cancellation"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:background="@drawable/personal_btn_stroke"
+                        android:drawableTop="@drawable/personal_btn_eg"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="注销"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_min" />
+                </LinearLayout>
+            </LinearLayout> -->
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

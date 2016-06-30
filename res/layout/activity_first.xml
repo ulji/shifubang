@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/faty_first"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/view_first" >
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view_first"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/llty_b"
+        android:background="@color/_gray" />
+
+    <LinearLayout
+        android:id="@+id/llty_b"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/first_below_btn_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+                           
+                android:gravity="center|fill_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/llytBtn_myorder"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                  >
+
+                <ImageView
+                    android:id="@+id/imgBtn_myorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/transparent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_tab_home" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgBtn_myorder"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:text="订单"
+                    android:textStyle="bold"
+                    android:textColor="@color/theme_color1"
+                    android:textSize="@dimen/text_size_m_min" />
+            </RelativeLayout>
+
+      
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/llytBtn_personal"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"  >
+
+                <ImageView
+                    android:id="@+id/imgBtn_personal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/transparent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_tab_me" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgBtn_personal"
+                    android:layout_centerHorizontal="true"
+                  android:layout_marginTop="1dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textStyle="bold"
+                    android:text="我"
+                    android:textColor="@color/theme_color1"
+                    android:textSize="@dimen/text_size_m_min" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InformationActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rrly_first"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_title_height"
+        android:background="@color/theme_color1" >
+
+        <ImageView
+            android:id="@+id/information_return"
+            android:layout_width="@dimen/register_icon_title_width"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/eg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="用户信息"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_secondary"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_information_ok"
+            android:layout_width="@dimen/feedback_icon_title_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/feedback_shape_btn"
+            android:scaleType="centerInside"
+            android:src="@drawable/eg"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_m_min" />
+    </RelativeLayout>
+
+    <!-- 基本信息标题 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="39dp"
+        android:background="@color/flax_ash"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="@string/tv_information_title"
+            android:textSize="@dimen/text_size_min" />
+    </LinearLayout>
+    <!-- 头像部分 -->
+
+    <RelativeLayout
+        android:id="@+id/rlyt_register_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.xskj.shifubang.view.CircleImageView
+            android:id="@+id/CircleImageView_register_portrait"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/head"
+            app:border_color="@color/white"
+            app:border_width="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/register_more"
+            android:gravity="center_vertical"
+            android:text="您的昵称"
+            android:textColor="@color/light_hint"
+            android:textSize="@dimen/text_size_min" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/_gray" />
+
+    <TextView
+        android:id="@+id/tv_information_sex"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:drawableRight="@drawable/register_more"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/tv_information_sex"
+        android:textSize="@dimen/text_size_min" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/_gray" />
+
+    <TextView
+        android:id="@+id/tv_information_email"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:drawableRight="@drawable/register_more"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/tv_information_email"
+        android:textSize="@dimen/text_size_min" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/_gray" />
+
+    <TextView
+        android:id="@+id/tv_information_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:drawableRight="@drawable/register_more"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/tv_information_phone"
+        android:textSize="@dimen/text_size_min" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/_gray" />
+
+    <TextView
+        android:id="@+id/tv_information_personalized_signature"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:drawableRight="@drawable/register_more"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/tv_information_personalized_signature"
+        android:textSize="@dimen/text_size_min" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/_gray" />
+
+</LinearLayout>

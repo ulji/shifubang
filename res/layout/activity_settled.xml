@@ -1,0 +1,340 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gj"
+    android:orientation="vertical"
+    tools:context=".SettledActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_title_height"
+        android:layout_gravity="top"
+        android:background="#20ffffff" >
+
+        <ImageView
+            android:id="@+id/register_return"
+            android:layout_width="@dimen/register_icon_title_width"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/eg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="师傅入驻"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_secondary" />
+
+        <Button
+            android:id="@+id/btn_settled_ok"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/setteld_shape_btn"            
+            android:scaleType="centerInside"
+            android:src="@drawable/eg"
+            android:text="@string/settled_btn_settledtext"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_m_min" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+     
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="@dimen/login_edit_width"
+            android:layout_height="@dimen/login_edit_height"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/login_edit_height"
+                android:layout_marginRight="@dimen/login_edit_padding"
+                android:padding="@dimen/login_edit_padding"
+                android:text="@string/settled_et_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_min" />
+
+            <EditText
+                android:id="@+id/et_settled_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/login_edit_height"
+                android:background="@drawable/login_shape_et"
+                android:hint="@string/settled_name_hint"
+                android:padding="@dimen/login_edit_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/_gray"
+                android:textSize="@dimen/text_size_min" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/login_edit_width"
+            android:layout_height="@dimen/login_edit_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/login_edit_padding"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/login_edit_height"
+                android:layout_marginRight="@dimen/login_edit_padding"
+                android:padding="@dimen/login_edit_padding"
+                android:text="@string/settled_et_id"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_min" />
+
+            <EditText
+                android:id="@+id/et_settled_id"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/login_edit_height"
+                android:background="@drawable/login_shape_et"
+                android:hint="@string/settled_id_hint"
+                android:padding="@dimen/login_edit_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/_gray"
+                android:textSize="@dimen/text_size_min" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/login_edit_width"
+            android:layout_height="@dimen/login_edit_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/login_edit_padding"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/login_edit_height"
+                android:layout_marginRight="@dimen/login_edit_padding"
+                android:padding="@dimen/login_edit_padding"
+                android:text="@string/settled_et_work_address"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_min" />
+
+            <EditText
+                android:id="@+id/et_settled_work_address"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/login_edit_height"
+                android:background="@drawable/login_shape_et"
+                android:hint="@string/settled_work_address_hint"
+                android:padding="@dimen/login_edit_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/_gray"
+                android:textSize="@dimen/text_size_min" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/login_edit_width"
+            android:layout_height="@dimen/login_edit_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/login_edit_padding"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/login_edit_height"
+                android:layout_marginRight="@dimen/login_edit_padding"
+                android:padding="@dimen/login_edit_padding"
+                android:text="@string/settled_et_service_area"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_min" />
+
+            <RelativeLayout
+                android:id="@+id/rlyt_settled_service_area"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/login_edit_height"
+                android:background="@drawable/login_shape_et" >
+
+                <TextView
+                    android:id="@+id/tv_settled_service_area"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/btn_settled_service_area"
+                    android:hint="@string/settled_service_area_hint"
+                    android:padding="@dimen/login_edit_padding"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/_gray"
+                    android:textSize="@dimen/text_size_min" />
+
+                <Button
+                    android:id="@+id/btn_settled_service_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/login_shape_dynameic_et"
+                    android:padding="@dimen/login_edit_padding"
+                    android:text="@string/settled_btn_service_area"
+                    android:textColor="@color/white"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:textSize="@dimen/text_size_min" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/login_edit_width"
+            android:layout_height="@dimen/login_edit_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/login_edit_padding"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/login_edit_height"
+                android:layout_marginRight="@dimen/login_edit_padding"
+                android:padding="@dimen/login_edit_padding"
+                android:text="@string/settled_et_service_type"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_min" />
+
+            <RelativeLayout
+                    android:id="@+id/rlyt_settled_service_type"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/login_edit_height"
+                android:background="@drawable/login_shape_et" >
+
+                <TextView
+                    android:id="@+id/tv_settled_service_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/btn_settled_service_type"
+                    android:hint="@string/settled_service_type_hint"
+                    android:padding="@dimen/login_edit_padding"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:textColorHint="@color/_gray"
+                    android:textSize="@dimen/text_size_min" />
+
+                <Button
+                    android:id="@+id/btn_settled_service_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/login_shape_dynameic_et"
+                    android:padding="@dimen/login_edit_padding"
+                    android:text="@string/settled_btn_service_type"
+                    android:textColor="@color/white"
+                    android:clickable="false"
+                    android:focusable="true"
+                    android:textSize="@dimen/text_size_min" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/login_edit_width"
+            android:layout_height="@dimen/login_edit_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/login_edit_padding"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/login_edit_height"
+                android:layout_marginRight="@dimen/login_edit_padding"
+                android:padding="@dimen/login_edit_padding"
+                android:text="@string/settled_et_service_number"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_min" />
+
+            <EditText
+                android:id="@+id/et_settled_service_num"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/login_edit_height"
+                android:background="@drawable/login_shape_et"
+                android:hint="@string/settled_service_number_hint"
+                android:padding="@dimen/login_edit_padding"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/_gray"
+                android:textSize="@dimen/text_size_min" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/login_edit_width"
+            android:layout_height="@dimen/login_edit_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/login_edit_padding"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/login_edit_height"
+                android:layout_marginRight="@dimen/login_edit_padding"
+                android:padding="@dimen/login_edit_padding"
+                android:text="@string/settled_et_automobile_type"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_min" />
+
+            <EditText
+                android:id="@+id/et_settled_automobile_type"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/login_edit_height"
+                android:background="@drawable/login_shape_et"
+                android:hint="@string/settled_automobile_type_hint"
+                android:padding="@dimen/login_edit_padding"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/_gray"
+                android:textSize="@dimen/text_size_min" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llyt_checkbox_settled_agreement"
+            android:layout_width="@dimen/login_edit_width"
+            android:layout_height="@dimen/login_edit_height"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/login_edit_padding"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:orientation="horizontal"
+                >
+                
+                 <CheckBox
+                
+                android:id="@+id/checkbox_settled_agreement"
+                android:layout_width="34dp"
+                android:layout_height="18dp"  
+                android:layout_marginTop="8dp"              
+                android:checked="true"
+                android:background="@drawable/settled_check_background"
+                android:button="@null" />
+            </LinearLayout>
+           
+
+            <TextView              
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/login_edit_height"
+           
+                android:padding="@dimen/login_edit_padding"
+                android:text="@string/settled_tv_agreement"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_min" />
+            
+            <TextView              
+                  android:id="@+id/tv_settled_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/login_edit_height"
+                             
+                android:text="@string/settled_tv_agreement_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_m_min" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

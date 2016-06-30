@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FeedbackActivity" >
+
+   <RelativeLayout
+        android:id="@+id/rrly_first"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_title_height"
+        android:background="@color/theme_color1" >
+
+        <ImageView
+            android:id="@+id/authentication_return"
+            android:layout_width="@dimen/register_icon_title_width"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/eg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="意见反馈"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_secondary" />
+        
+        <Button
+            android:id="@+id/btn_settled_ok"
+            android:layout_width="@dimen/feedback_icon_title_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/feedback_shape_btn"
+            
+            android:scaleType="centerInside"
+            android:src="@drawable/eg"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_m_min" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:lineSpacingExtra="4dp"         
+            android:paddingStart="@dimen/text_size_m_min"
+            android:text="@string/feedback_title_tv"
+            android:textColor="@color/dark"
+            android:textSize="@dimen/text_size_secondary" />
+    </LinearLayout>
+    
+       <LinearLayout
+        android:layout_width="@dimen/login_edit_width"
+        android:layout_height="120dp"
+        android:background="@drawable/feedback_shape_et"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_feedback"
+            android:gravity="top|left"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:hint="@string/feedback_et_hint"
+            android:maxLength="100"
+            android:padding="@dimen/login_edit_padding"            
+            android:textColor="@color/black"
+            android:textColorHint="@color/_gray"
+            android:textSize="@dimen/text_size_min" />
+
+    </LinearLayout>
+    
+       <TextView
+           android:gravity="bottom|center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp"        
+            android:text="@string/bootum_feedback_title_tv"
+            android:textColor="#80333333"
+            android:textSize="@dimen/text_size_min" />
+    
+</LinearLayout>

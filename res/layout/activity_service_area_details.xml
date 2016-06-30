@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ServiceAreaDetailsActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rrly_first"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_title_height"
+        android:background="@color/theme_color1" >
+
+        <ImageView
+            android:id="@+id/information_return"
+            android:layout_width="@dimen/register_icon_title_width"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/eg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="选择区域"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_secondary"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_information_ok"
+            android:layout_width="@dimen/feedback_icon_title_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/feedback_shape_btn"
+            android:scaleType="centerInside"
+            android:src="@drawable/eg"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_m_min" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/login_edit_width"
+        android:layout_height="@dimen/login_edit_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/login_edit_margin"
+        android:layout_marginTop="@dimen/login_edit_margin"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rlyt_settled_service_area"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/login_edit_height"
+            android:background="@drawable/authentication_shape_btn" >
+
+            <Button
+                android:id="@+id/btn_settled_service_area"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/transparent"
+                android:clickable="false"
+                android:focusable="true"
+                android:padding="@dimen/login_edit_padding"
+                android:text="请选择您要添加的区域"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_min" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llyt_add_view"
+        android:layout_width="@dimen/login_edit_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/feedback_shape_et"
+        android:orientation="horizontal" >
+
+        <com.xskj.shifubang.view.WordWrapView
+            android:id="@+id/view_wordwrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+
+</LinearLayout>

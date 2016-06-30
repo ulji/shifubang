@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">师傅帮</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login_title">师傅帮</string>
+    <string name="login_account_hint">请输入账号</string>
+    <string name="rorget_account_hint">请输入账号或手机号</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_verification_hint">验证码</string>
+    <string name="title_activity_looding">师傅帮</string>
+    <string name="title_activity_login">师傅帮</string>
+    <string name="login_btn_logintext">登录</string>
+    <string name="login_btn_accountlogintext">账号登录</string>
+    <string name="login_btn_passwordlogintext">动态密码登录</string>
+    <string name="login_btn_register">注册</string>
+    <string name="login_btn_pwd">忘记密码</string>
+    <string name="login_text_remember_pwd">记住密码</string>
+    <string name="login_btn_registertext">Register</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="register_pwd_hint">请输入密码</string>
+    <string name="register_agin_pwd_hint">请再次输入密码</string>
+    <string name="register_btn_registertext">下一步</string>
+    <string name="rorget_btn_submittext">提交</string>
+    <string name="title_activity_forget_password">ForgetPasswordActivity</string>
+    <string name="first_all_orders_btn">全部订单</string>
+    <string name="first_already_orders_btn">已接订单</string>
+    <string name="first_complete_orders_btn">完成订单</string>
+    <string name="title_activity_settled">SettledActivity</string>
+    <string name="settled_btn_settledtext">立即入驻</string>
+    <string name="settled_et_name">师傅姓名</string>
+    <string name="settled_et_id">身份证号</string>
+    <string name="settled_et_work_address">工作地址</string>
+    <string name="settled_et_service_area">服务区域</string>
+    <string name="settled_et_service_type">服务类型</string>
+    <string name="settled_et_service_number">服务人数</string>
+    <string name="settled_et_automobile_type">汽车类型</string>
+    <string name="settled_name_hint">请输入师傅姓名</string>
+    <string name="settled_id_hint">请输入身份证号</string>
+    <string name="settled_work_address_hint">请输入工作地址</string>
+    <string name="settled_service_area_hint">请选择服务区域</string>
+    <string name="settled_service_type_hint">请选择服务类型</string>
+    <string name="settled_service_number_hint">服务人数（比如：人数2人   可以多个）</string>
+    <string name="settled_automobile_type_hint">汽车类型及车辆个数（如：中型）</string>
+    <string name="settled_btn_service_area">选择区域</string>
+    <string name="settled_btn_service_type">选择类型</string>
+    <string name="settled_tv_agreement">我同意并遵守</string>
+    <string name="settled_tv_agreement_content">《师傅帮协议》</string>
+
+    <!-- 上传头像部分 -->
+    <!-- 头像 -->
+    <string name="set_head">上传图片</string>
+    <string name="from_camera">照相</string>
+    <string name="from_album">从相册中选择</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_Head">ChangeHead</string>
+    <string name="title_activity_authentication">AuthenticationActivity</string>
+    <string name="authentication_title_tv">小提示：师傅您好，为了用户的安全也为了咱们自己的利益，只有通过实名认证才能接单。</string>
+    <string name="authentication_tv_name">真实姓名</string>
+    <string name="id_tv_name">身份证件</string>
+    <string name="authentication_name_hint">请输入您的名字</string>
+    <string name="id_name_hint">请输入您的身份证号</string>
+    <string name="authentication_btn_next">人工审核</string>
+    <string name="title_activity_explain">ExplainActivity</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="feedback_title_tv">如果您对我们有什么意见或建议都可以填写到下边的框架，点击提交就可以反馈给我们。我们会更快的给您联系。</string>
+    <string name="bootum_feedback_title_tv">联系电话 ：400 090 5859</string>
+    <string name="feedback_et_hint">请填写反馈信息</string>
+    <string name="title_activity_information">InformationActivity</string>
+    <string name="tv_information_title">基本信息</string>
+    <string name="tv_information_sex">性别</string>
+    <string name="tv_information_phone">电话</string>
+    <string name="tv_information_personalized_signature">签名</string>
+    <string name="tv_information_email">邮箱</string>
+    <string name="title_activity_service_area_details">ServiceAreaDetailsActivity</string>
+    <string name="title_activity_service_type_details">ServiceTypeDetailsActivity</string>
+    <string name="title_activity_location_details">LocationDetailsActivity</string>
+
+    <!-- 加载页 -->
+    <string name="progressbar_dialog_txt">加载中...</string>
+
+    <!-- 极光推送 -->
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag can be number, alphabet, underscore, Chinese. Use , to split many tags.</string>
+    <string name="alias_hint">Alias can be number, alphabet, underscore, Chinese.</string>
+    <string name="style_hint">style should be number</string>
+    <string name="error_style_empty">style cannot be empty</string>
+    <string name="error_alias_empty">alias cannot be empty</string>
+    <string name="error_tag_empty">tag cannot be empty</string>
+    <string name="error_tag_gs_empty">Invalid format</string>
+    <string name="error_network">Failed to init due to network exception.</string>
+    <string name="logining">Running in background. Please see log.</string>
+    <string name="setting_su">Succeed to set</string>
+    <string name="title_activity_order_details">OrderDetailsActivity</string>
+    <string name="title_activity_save_reserve_order">SaveReserveOrderActivity</string>
+
+    <!-- 头像上传 -->
+    <string name="take_photo">现在拍照</string>
+    <string name="pick_from_album">从图库中选取</string>
+    <string name="cancel">取消</string>
+    <string name="photo">照片</string>
+    <string name="title_activity_audit">AuditActivity</string>
+    <string name="title_activity_tu_pian">TuPianActivity</string>
+
+</resources>
