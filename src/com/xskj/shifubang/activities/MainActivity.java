@@ -24,6 +24,7 @@ import com.xskj.shifubang.fragment.Personal;
  * 功能：师傅帮首页
  * @author 姓名：aimin 
  * 时间：2016-5-28
+ * 你好的
  */
 public class MainActivity extends FragmentActivity implements OnClickListener {
 
