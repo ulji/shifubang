@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -14,11 +13,11 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.zshifu.R;
 import com.xskj.shifubang.cropimage.CropHelper;
 import com.xskj.shifubang.cropimage.OSUtils;
 import com.xskj.shifubang.fragment.FirstOrders;
 import com.xskj.shifubang.fragment.Personal;
+import com.zshifu.R;
 
 /**
  * 功能：师傅帮首页
@@ -26,7 +25,7 @@ import com.xskj.shifubang.fragment.Personal;
  * 时间：2016-5-28
  * 你好的
  */
-public class MainActivity extends FragmentActivity implements OnClickListener {
+public class MainActivity extends _FragmentActivity implements OnClickListener {
 
 	private RelativeLayout myOrderBtn; // 我的订单按钮
 	private RelativeLayout personalBtn; // 个人中心按钮
@@ -45,15 +44,17 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		startFragment(firstOrders_frag);
 		
 	}
+	
+
 
 	/**
 	 * 初始化控件
 	 */
 	private void init() {
-		myOrderBtn = (RelativeLayout) findViewById(R.id.llytBtn_myorder);
-		personalBtn = (RelativeLayout) findViewById(R.id.llytBtn_personal);
-		myOrderImgBtn = (ImageView) findViewById(R.id.imgBtn_myorder);
-		personalImgBtn = (ImageView) findViewById(R.id.imgBtn_personal);
+		myOrderBtn = $(R.id.llytBtn_myorder);
+		personalBtn = $(R.id.llytBtn_personal);
+		myOrderImgBtn = $(R.id.imgBtn_myorder);
+		personalImgBtn = $(R.id.imgBtn_personal);
 		
 		myOrderImgBtn.setImageResource(R.drawable.ic_tab_home_show);
 		personalImgBtn.setImageResource(R.drawable.ic_tab_me);
